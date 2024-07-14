@@ -6,10 +6,7 @@
 .login {
     width: 50vw;
     height: 70vh;
-   
     margin-left: 20rem;
-    
-    
   }
   
   .loginwrap {
@@ -65,7 +62,7 @@
     }
   
     .divider {
-      width: 40%; /* Adjust the width of the divider for smaller screens */
+      width: 40%; 
     }
     .head {
         width: 90vw;

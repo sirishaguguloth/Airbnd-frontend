@@ -53,14 +53,14 @@ export default function Login() {
                 ))}
               </Form.Control>
               <Form.Control type="tel" placeholder="Enter phone number" />
-              <p style={{ marginTop: "0.5rem" }}>
+              <p style={{ marginTop: "0.5rem", fontFamily:"style", marginLeft:"1rem" }}><small>
                 We’ll call or text you to confirm your number. Standard message
-                and data rates apply.
+                and data rates apply.</small>
               </p>
               <Button
                 variant="danger mt-2 w-100 mb-5 border-dark"
                 type="submit"
-                onClick={handleClose} // Close the page upon clicking the button
+                onClick={handleClose} 
               >
                 Continue
               </Button>
