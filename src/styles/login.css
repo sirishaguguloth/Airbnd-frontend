@@ -1,72 +1,84 @@
 *{
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 .login {
-    width: 50vw;
-    height: 70vh;
-    margin-left: 20rem;
-  }
+  width: 50vw;
+  height: 70vh;
+  margin-left: 20rem;
+}
+
+.loginwrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  border-radius: 0.5rem;
+  flex-direction: column;
+  border: 1px solid black;
+}
+
+.head {
+  text-align: center;
+  padding: 1rem;
+  width: 50vw;
+  border-bottom: 1px solid rgb(225, 223, 223);
+  display: flex;
+  flex-direction: row; 
+  gap: 10rem;
+}
+.section{
+  overflow-y: scroll;
+  height: 73vh;
+  width: 50vw;
   
-  .loginwrap {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 2rem;
-    border-radius: 0.5rem;
-    flex-direction: column;
-    border: 1px solid black;
-  }
+}
+.section2{
+  padding: 1rem;
+}
+.horizantal{
+  margin-top: -1rem;
+  display: flex;
+  flex-direction: ;
+}
+.divider{
   
-  .head {
-    text-align: center;
-    padding: 1rem;
-    width: 50vw;
-    border-bottom: 1px solid rgb(225, 223, 223);
-    display: flex;
-    flex-direction: row; 
-    gap: 10rem;
+ 
+  width: 20%;
+  margin-left: 1rem;
+}
+.icon{
+  font-size: 1.5rem;
+}
+.items{
+  display: flex;
+  flex-direction: row; 
+  gap: 10rem;
+}
+
+ 
+@media (max-width: 768px) {
+  .login {
+    width: 90vw; 
+ margin-left: 2rem;
   }
   .section{
-    overflow-y: scroll;
-    height: 73vh;
-    
+    width: 90vw;
   }
-  .section2{
-    padding: 1rem;
+  .divider {
+    width: 100%; 
   }
-  .hr{
-    display: flex;
-    flex-direction: row;
-    margin-top: -1rem;
+  .head {
+      width: 90vw;
+
   }
-  .divider{
-    width: 20vw;
-    margin-left: 1rem;
-  }
-  .icon{
-    font-size: 1.5rem;
-  }
+}
+
+@media (max-width: 576px) {
   .items{
     display: flex;
     flex-direction: row; 
-    gap: 10rem;
+    gap: 1rem;
   }
-
-  
-  @media (max-width: 768px) {
-    .login {
-      width: 90%; 
-   margin-left: 2rem;
-    }
-  
-    .divider {
-      width: 40%; 
-    }
-    .head {
-        width: 90vw;
-  
-    }
-  }
-  
+}

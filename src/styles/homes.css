@@ -1,0 +1,150 @@
+.Homes {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; 
+    padding: 20px;
+ overflow-x: hidden;
+    height: 100vh;
+  }
+  
+  .page1 {
+    display: flex;
+    width: 100%; 
+    
+  }
+  
+  .part1,
+  .part2 {
+    flex: 1; 
+    padding: 20px; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    height: 90vh;
+  }
+  .part2{
+    border:1px solid black;
+    border-radius: 1rem;
+  }
+  
+  .part1head h2 {
+  font-weight: bold;
+    color: #fd0808;
+    margin-top: -3rem;
+  }
+  .part1head{
+    margin-top: -7rem;
+
+  }
+  .part1head h3{
+    margin-left: -1.5rem;
+    font-weight: 600;
+  }
+  .page2{
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .img{
+ margin-top: 2rem;
+  }
+  .imgcontent{
+    display: flex;
+    flex-direction: row;
+    gap: 2.5rem;
+    width: 80vw;
+  }
+  
+  .cont1 h5{
+    font-weight: 550;
+    margin-top: 2rem;
+  }
+
+  .page3{
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 9rem;
+  }
+
+  
+  .banhead{
+    color:red
+    
+  }
+
+  .banheading{
+    margin-left: -10rem;
+    margin-top: 1.5rem;
+  }
+
+  .tabbanner{
+    margin-left: 50rem;
+    margin-top: 1rem;
+  }
+    .tabban{
+        gap: 6rem;
+        display: flex;
+ }
+ .divider{
+    border-bottom: 1px solid black;
+    margin-left: -42rem;
+    width: 80vw;
+ }
+ .tabhead{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+ }
+ .items{
+    margin-left: 0.9rem;
+ }
+ #items3{
+    margin-left: -2rem;
+ }
+
+  
+
+
+  @media (max-width: 768px) {
+    .imgcontent{
+        display: flex;
+        flex-direction: column;
+        gap: 0.2rem;
+    }
+    .page1{
+        align-items: stretch;
+        flex-direction: column;
+        margin-top: 8rem;
+    }
+    .tabbanner{
+        margin-left: 20rem;
+        margin-top: 1rem;
+      }
+      .tabban{
+        margin-left: 5rem;
+        gap: 0rem;
+        display: flex;
+      }
+
+      .divider{
+        margin-left: -21rem;
+        width: 95vw;
+      }
+      .tabhead{
+        gap: 3rem;
+        margin-left: -6.5rem;
+        padding: 5px;
+      }
+      
+      
+     
+     
+      
+   
+  }

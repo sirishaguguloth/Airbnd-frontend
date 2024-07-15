@@ -67,7 +67,7 @@ export default function Login() {
             </div>
           </Form>
 
-          <div className="hr">
+          <div className="horizantal">
             <hr className="divider" /> or <hr className="divider" />
           </div>
 
