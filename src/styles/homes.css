@@ -2,14 +2,13 @@
     font-family: Arial, sans-serif;
     background-color: #ffffff; 
     padding: 20px;
- overflow-x: hidden;
+    overflow-x: hidden;
     height: 100vh;
   }
   
   .page1 {
     display: flex;
     width: 100%; 
-    
   }
   
   .part1,
@@ -22,129 +21,178 @@
     align-items: center; 
     height: 90vh;
   }
-  .part2{
-    border:1px solid black;
+  
+  .part2 {
+    border: 1px solid black;
     border-radius: 1rem;
   }
   
   .part1head h2 {
-  font-weight: bold;
+    font-weight: bold;
     color: #fd0808;
     margin-top: -3rem;
   }
-  .part1head{
+  
+  .part1head {
     margin-top: -7rem;
-
   }
-  .part1head h3{
+  
+  .part1head h3 {
     margin-left: -1.5rem;
     font-weight: 600;
   }
-  .page2{
+  
+  .page2 {
     margin-top: 5rem;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
   }
-  .img{
- margin-top: 2rem;
+  
+  .img {
+    margin-top: 2rem;
   }
-  .imgcontent{
+  
+  .imgcontent {
     display: flex;
     flex-direction: row;
     gap: 2.5rem;
     width: 80vw;
   }
   
-  .cont1 h5{
+  .cont1 h5 {
     font-weight: 550;
     margin-top: 2rem;
   }
-
-  .page3{
+  
+  .page3 {
     margin-top: 3rem;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-left: 9rem;
   }
-
   
-  .banhead{
-    color:red
-    
+  .banhead {
+    color: red;
   }
-
-  .banheading{
+  
+  .banheading {
     margin-left: -10rem;
     margin-top: 1.5rem;
   }
-
-  .tabbanner{
+  
+  .tabbanner {
     margin-left: 50rem;
     margin-top: 1rem;
   }
-    .tabban{
-        gap: 6rem;
-        display: flex;
- }
- .divider{
+  
+  .tabban {
+    gap: 6rem;
+    display: flex;
+  }
+  
+  .divider {
     border-bottom: 1px solid black;
     margin-left: -42rem;
     width: 80vw;
- }
- .tabhead{
+  }
+  
+  .tabhead {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    
- }
- .items{
-    margin-left: 0.9rem;
- }
- #items3{
-    margin-left: -2rem;
- }
-
-  
-
-
-  @media (max-width: 768px) {
-    .imgcontent{
-        display: flex;
-        flex-direction: column;
-        gap: 0.2rem;
-    }
-    .page1{
-        align-items: stretch;
-        flex-direction: column;
-        margin-top: 8rem;
-    }
-    .tabbanner{
-        margin-left: 20rem;
-        margin-top: 1rem;
-      }
-      .tabban{
-        margin-left: 5rem;
-        gap: 0rem;
-        display: flex;
-      }
-
-      .divider{
-        margin-left: -21rem;
-        width: 95vw;
-      }
-      .tabhead{
-        gap: 3rem;
-        margin-left: -6.5rem;
-        padding: 5px;
-      }
-      
-      
-     
-     
-      
-   
   }
+  
+  .items {
+    margin-left: 0.9rem;
+  }
+  
+  #items3 {
+    margin-left: -2rem;
+  }
+  
+  .item {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .custom-table {
+    width: 70%;
+    margin-left: 9rem;
+    margin-top: 2rem;
+  }
+  
+  .custom-table th {
+    font-size: larger;
+    padding: 1rem;
+    border-bottom: 1px solid #0a0909; 
+  }
+  
+  .custom-table td {
+    border-bottom: 1px solid #0a0909;  
+    padding: 4px;
+    margin-left: 2rem;
+  }
+  
+  .divider-row {
+    width: 60vw;
+  }
+  
+  .tdhead {
+    font-weight: bold;
+  }
+  
+  /* Media Query for Tablets (768px) and Below */
+  @media (max-width: 768px) {
+    .imgcontent {
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
+    }
+  
+    .page1 {
+      align-items: stretch;
+      flex-direction: column;
+      margin-top: 8rem;
+    }
+  
+    .tabbanner {
+      margin-left: 20rem;
+      margin-top: 1rem;
+    }
+  
+    .tabban {
+      margin-left: 5rem;
+      gap: 0rem;
+      display: flex;
+    }
+  
+    .divider {
+      margin-left: -21rem;
+      width: 95vw;
+    }
+  
+    .tabhead {
+      gap: 3rem;
+      margin-left: -6.5rem;
+      padding: 5px;
+    }
+  
+    .custom-table {
+      width: 95%;
+      margin: 0 auto;
+      margin-top: 2rem;
+    }
+  
+    .custom-table th {
+      padding: 1.5rem;
+    }
+  
+    .custom-table td {
+      padding: 0.5rem;
+    }
+  }
+  

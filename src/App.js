@@ -10,7 +10,7 @@ export default function App() {
  <BrowserRouter>
  <Routes>
  <Route path='/login' Component={Login} />
-  <Route path='/' Component={Homes} />
+  <Route path='/host/homes' Component={Homes} />
  </Routes>
  </BrowserRouter>
     </div>

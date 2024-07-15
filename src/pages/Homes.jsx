@@ -48,18 +48,54 @@ export default function Homes() {
        <div className="banheading"><h2>Airbnb it with top‑to‑bottom protection</h2></div>
     </div>
     </div>
-    <div className="table">
-        <div className="tabbanner">
-          <span className='tabban'><span style={{marginLeft:"-5rem"}}>Airbnb</span><div className='tabbanspan'><span style={{marginLeft:"6rem"}}>Competitors</span></div></span>
-          <hr className='divider'/>
-        </div>
-        <div className="tabhead">
-            <div className='items' ><h6>Guest identity verification</h6></div>
-            <div className='items' >2</div>
-            <div className='items' id='items3' >3</div>
-        </div>
-        
-        
+    <div className="table-container">
+      <table className="custom-table">
+        <thead>
+          <tr>
+            <th className='airbnb-head'></th>
+            <th>Airbnb</th>
+            <th>Competitors</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td colSpan="1" className="divider-row">
+            <p className='tdhead'>Guest identity verification</p>
+              Our comprehensive verification system
+              checks details such as name, address,
+              government ID and more to confirm the identity
+              of guests who book on Airbnb.
+            </td>
+            
+            <td className="divider-row1">1</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td colSpan="1" className="divider-row">
+            <p className='tdhead'>Guest identity verification</p>
+              Our comprehensive verification system
+              checks details such as name, address,
+              government ID and more to confirm the identity
+              of guests who book on Airbnb.
+            </td>
+            
+            <td>1</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td colSpan="1" className="divider-row">
+              <p className='tdhead'>Guest identity verification</p>
+              Our comprehensive verification system
+              checks details such as name, address,
+              government ID and more to confirm the identity
+              of guests who book on Airbnb.
+            </td>
+            
+            <td>1</td>
+            <td>2</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
 
 

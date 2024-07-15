@@ -26,7 +26,7 @@
   border-bottom: 1px solid rgb(225, 223, 223);
   display: flex;
   flex-direction: row; 
-  gap: 10rem;
+  gap: 13rem;
 }
 .section{
   overflow-y: scroll;
@@ -40,11 +40,9 @@
 .horizantal{
   margin-top: -1rem;
   display: flex;
-  flex-direction: ;
+  flex-direction:row ;
 }
 .divider{
-  
- 
   width: 20%;
   margin-left: 1rem;
 }
@@ -71,7 +69,9 @@
   }
   .head {
       width: 90vw;
-
+  }
+  .head h5 {
+    margin-left: -2rem;
   }
 }
 
@@ -80,5 +80,8 @@
     display: flex;
     flex-direction: row; 
     gap: 1rem;
+  }
+  .head h5 {
+    margin-left: -10rem;
   }
 }
