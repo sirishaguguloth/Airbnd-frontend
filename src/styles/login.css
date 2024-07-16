@@ -33,6 +33,7 @@
   height: 73vh;
   width: 50vw;
   
+  
 }
 .section2{
   padding: 1rem;
@@ -65,13 +66,19 @@
     width: 90vw;
   }
   .divider {
-    width: 100%; 
+    width: 50vw; 
+  
   }
   .head {
       width: 90vw;
   }
   .head h5 {
     margin-left: -2rem;
+  }
+  .horizantal{
+    margin-top: -1rem;
+    display: flex;
+    flex-direction:row ;
   }
 }
 
@@ -84,4 +91,24 @@
   .head h5 {
     margin-left: -10rem;
   }
+ .horizantal{
+  margin-left:17rem;
+  display: flex;
+  flex-direction: row;
+ }
+ 
 }
+
+ /* Styles for laptop devices */
+ @media (min-width: 769px) and (max-width: 1024px) {
+  .horizantal{
+    margin-left:15.5rem;
+    display: flex;
+    flex-direction: row;
+
+   }
+   .head h5 {
+    margin-left: -5rem;
+  }
+  
+ }

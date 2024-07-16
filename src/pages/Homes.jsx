@@ -1,7 +1,45 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../styles/homes.css';
 import img from '../assests/home-img.webp';
+import { FaCheck } from "react-icons/fa";
+import { ImCross } from "react-icons/im";
+import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io"; 
+import img1 from '../assests/c.webp';
+import { Link } from 'react-router-dom';
+
 export default function Homes() {
+  const [openIndex, setOpenIndex] = useState(null);
+
+  // Function to toggle visibility of answers
+  const toggleAnswer = (index) => {
+    if (openIndex === index) {
+      setOpenIndex(null); // Close the answer if already open
+    } else {
+      setOpenIndex(index); // Open the clicked question's answer
+    }
+  };
+  const qaData = [
+    {
+      question: 'Is my place right for Airbnb?',
+      answer: 'Airbnb guests are interested in all kinds of places. We have listings for tiny homes, cabins, tree houses and more. Even a spare room can be a great place to stay.',
+    },
+    {
+      question: 'Do I have to host all the time?',
+      answer: 'Not at all – you control your calendar. You can host once a year, a few nights a month or more often.',
+    },
+    {
+      question: 'How much should I interact with guests?',
+      answer: 'It’s up to you. Some Hosts prefer to message guests only at key moments – like sending a short note when they check in – while others also enjoy meeting their guests in person. You’ll find a style that works for you and your guests.',
+    },
+    {
+      question: 'Any tips on being a great Airbnb Host?',
+      answer: 'Getting the basics down goes a long way. Keep your place clean, respond to guests promptly and provide necessary amenities like fresh towels. Some Hosts like adding a personal touch such as putting out fresh flowers or sharing a list of local places to explore – but it’s not required.',
+    },
+    {
+      question: 'What are Airbnb’s fees?',
+      answer: 'Airbnb typically collects a flat service fee of 3% of the reservation subtotal when you get paid. We also collect a fee from guests when they book. In many areas Airbnb also collects and pays sales and tourism taxes automatically on your behalf.',
+    },
+  ];
   return (
     <div className='Homes'>
 
@@ -45,8 +83,9 @@ export default function Homes() {
         <h1 style={{fontWeight:"bolder",fontSize:"3rem"}}>
        <span className="banhead">air</span><span>cover</span></h1>
        <small style={{marginLeft:"4rem"}}>for Hosts</small>
+       </div>
        <div className="banheading"><h2>Airbnb it with top‑to‑bottom protection</h2></div>
-    </div>
+   
     </div>
     <div className="table-container">
       <table className="custom-table">
@@ -61,43 +100,130 @@ export default function Homes() {
           <tr>
             <td colSpan="1" className="divider-row">
             <p className='tdhead'>Guest identity verification</p>
-              Our comprehensive verification system
+            </td>
+            <td className="divider-row1"><FaCheck  className='checkmark'/></td>
+            <td><FaCheck className='checkmark1' /></td>
+          </tr>
+          <tr>
+            <td colSpan="3" className='spanrow'> Our comprehensive verification system
               checks details such as name, address,
               government ID and more to confirm the identity
-              of guests who book on Airbnb.
-            </td>
-            
-            <td className="divider-row1">1</td>
-            <td>2</td>
+              of guests who book on Airbnb.</td>
           </tr>
           <tr>
             <td colSpan="1" className="divider-row">
-            <p className='tdhead'>Guest identity verification</p>
-              Our comprehensive verification system
+            <p className='tdhead'>Reservation screening</p>
+            </td>
+            <td><FaCheck  className='checkmark'/></td>
+            <td><ImCross  className='crossicon'/></td>
+          </tr>
+          <tr>
+            <td colSpan="3" className='spanrow'> Our comprehensive verification system
               checks details such as name, address,
               government ID and more to confirm the identity
-              of guests who book on Airbnb.
-            </td>
-            
-            <td>1</td>
-            <td>2</td>
+              of guests who book on Airbnb.</td>
           </tr>
           <tr>
             <td colSpan="1" className="divider-row">
-              <p className='tdhead'>Guest identity verification</p>
-              Our comprehensive verification system
+              <p className='tdhead'>$3m damage protection</p>
+            </td>
+            <td><FaCheck className='checkmark' /></td>
+            <td><ImCross  className='crossicon'/></td>
+          </tr>
+          <tr>
+            <td colSpan="3"  className='spanrow'> Our comprehensive verification system
               checks details such as name, address,
               government ID and more to confirm the identity
-              of guests who book on Airbnb.
+              of guests who book on Airbnb.</td>
+          </tr>
+          <tr className="dividerrow">
+            <td>Auto & boat</td>
+            <td><FaCheck className='checkmark' /></td>
+            <td><ImCross  className='crossicon'/></td>
+          </tr>
+          <tr className="dividerrow">
+            <td >Art & valuables</td>
+            <td><FaCheck className='checkmark' /></td>
+            <td><ImCross  className='crossicon'/></td>
+          </tr>
+          <tr className="dividerrow">
+            <td>Pet damage</td>
+            <td><FaCheck className='checkmark' /></td>
+            <td><ImCross  className='crossicon'/></td>
+          </tr>
+          <tr className="dividerrow">
+            <td>Income loss</td>
+            <td><FaCheck className='checkmark' /></td>
+            <td><ImCross  className='crossicon'/></td>
+          </tr>
+          <tr className="dividerrow">
+            <td>Deep cleaning</td>
+            <td><FaCheck className='checkmark' /></td>
+            <td><ImCross  className='crossicon'/></td>
+          </tr>
+          <tr>
+            <td colSpan="1" className="divider-row">
+              <p className='tdhead'>$1m USD liability insurance</p>
             </td>
-            
-            <td>1</td>
-            <td>2</td>
+            <td><FaCheck className='checkmark' /></td>
+            <td><FaCheck className='checkmark1' /></td>
+          </tr>
+          <tr>
+            <td colSpan="3"  className='spanrow'> You’re protected in the rare event that a guest gets hurt or their belongings are damaged or stolen.</td>
+          </tr>
+          <tr>
+            <td colSpan="1" className="divider-row">
+              <p className='tdhead'>24-hour safety line</p>
+            </td>
+            <td><FaCheck className='checkmark' /></td>
+            <td><ImCross  className='crossicon'/></td>
+          </tr>
+          <tr>
+            <td colSpan="3"  className='spanrow'> If you ever feel unsafe, our app provides one-tap access to specially trained safety agents, day or night.</td>
           </tr>
         </tbody>
       </table>
     </div>
 
+    <p className='lasttr'>Comparison is based on public information and free offerings by top competitors as of 22/10. Find details and exclusions here.</p>
+    <button className='leranbtn'>Learn more</button>
+
+    <div className="page4">
+      <div className="page4warp">
+      <div className="Qshead">
+        <h3>Your questions, answered</h3>
+      </div>
+      <div className="Qs">
+        {qaData.map((item, index) => (
+          <div key={index} className="question">
+            <div className="question-header" onClick={() => toggleAnswer(index)}> 
+              <h5>{item.question}</h5>
+              {openIndex === index ? <IoIosArrowUp className={`icon ${openIndex === index ? 'open' : ''}`} /> : <IoIosArrowDown className={`icon ${openIndex === index ? 'open' : ''}`} />}
+            </div>
+            {openIndex === index && (
+              <div className="answer">
+                <p>{item.answer}</p>
+              </div>
+            )}
+          </div>
+        ))}
+      </div>
+    </div>
+    </div>
+   <div className="lastpage">
+    <div className="lpagewrap">
+   <div className="lpageban">
+   <div className="page4img" >
+      <img src={img1} alt="" height={250} width={500} />
+    </div>
+    <div className="lastcont">
+      <h3>Still have questions?</h3>
+      <p>Get answers from an experienced Superhost near you.</p>
+      <button className='lastbtn'><Link  className='links'>Match with a Superhost</Link></button>
+    </div>
+    </div>
+   </div>
+   </div>
 
     </div>
   )

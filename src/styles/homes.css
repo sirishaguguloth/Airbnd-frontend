@@ -79,8 +79,8 @@
   }
   
   .banheading {
-    margin-left: -10rem;
-    margin-top: 1.5rem;
+    margin-left: -20rem;
+    margin-top: 10rem;
   }
   
   .tabbanner {
@@ -120,7 +120,7 @@
   }
   
   .custom-table {
-    width: 70%;
+    width: 80%;
     margin-left: 9rem;
     margin-top: 2rem;
   }
@@ -128,22 +128,133 @@
   .custom-table th {
     font-size: larger;
     padding: 1rem;
-    border-bottom: 1px solid #0a0909; 
+    border-bottom: 2px solid rgb(182, 182, 182);  
+  }
+  
+  .divider-row  {
+    width: 90vw;
+
+  }
+  .spanrow {
+    width: 60vw;
+    column-span: 1;
+    border-bottom: 1.7px solid rgb(182, 182, 182); 
   }
   
   .custom-table td {
-    border-bottom: 1px solid #0a0909;  
-    padding: 4px;
+    padding: 5px;
     margin-left: 2rem;
   }
   
-  .divider-row {
-    width: 60vw;
+  .dividerrow{
+    border-bottom: 1px solid rgb(182, 182, 182); 
+  
   }
   
   .tdhead {
     font-weight: bold;
   }
+  .checkmark{
+    color: green;
+    margin-left: 1.5rem;
+    height: 4vh;
+    width: 3rem;
+  }
+  .checkmark1{
+    margin-left: 4rem;
+    color:green;
+    height: 4vh;
+    width: 3rem;
+  }
+  .crossicon{
+    margin-left: 4rem;
+    color: #fd0808;
+    height:3vh;
+    width: 2rem;
+  }
+  .lasttr{
+    width: 100vw;
+    margin-left: 10rem;
+    margin-top: 1rem;
+  }
+  .leranbtn{
+    margin-left: 35rem;
+    padding: 10px;
+    width: 10vw;
+  }
+
+  .page4{
+    margin-top: 3rem;
+    display: flex;
+   background-color: rgb(254, 254, 246);
+  
+  }
+  .page4warp{
+    display: flex;
+    flex-direction: row;
+    gap: 7rem;
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+    margin-left: 3rem;
+    
+  }
+    .Qs {
+      margin-top: 1rem;
+  
+    }
+    
+    .question {
+      border-bottom: 1px solid #ccc; /* Add border-bottom for each question */
+    }
+    .question-header {
+      padding: 5px;
+      cursor: pointer;
+    }
+    
+    .answer {
+      margin-top: 1px;
+    }
+    .lastpage{
+      background-color: rgb(254, 254, 246);
+    }
+    .lpagewrap{
+      display: flex;
+      flex-direction: row;
+      padding: 1rem;
+      justify-content: center;
+      align-items: center;
+      gap: 5rem;
+  
+    }
+    .page4img{
+      margin-left: -7rem;
+     
+    }
+    .lpageban{
+      width: 90vw;
+      height: auto;
+      background-color: white;
+      display: flex;
+      flex-direction: row;
+      padding: 1rem;
+      justify-content: center;
+      align-items: center;
+      gap: 5rem;
+      border-radius: 2rem;
+      margin-top: 2rem;
+    }
+    .lastbtn{
+      border-radius: 5px;
+      padding: 7px;
+   
+    }
+    .links{
+      text-decoration: none;
+      color: black;
+    }
+   
+    
   
   /* Media Query for Tablets (768px) and Below */
   @media (max-width: 768px) {
@@ -194,5 +305,88 @@
     .custom-table td {
       padding: 0.5rem;
     }
+    .leranbtn{
+     margin-left: 15rem;
+     width: 20vw;
+    }
+    .lasttr{
+      margin-left: 1rem;
+      width: 90vw;
+    }
+    .lpagewrap{
+      flex-direction: column;
+    }
+    .page4img{
+      margin-left: 1rem;
+      margin-top: 2rem;
+    }
+    .lpageban{
+      display: flex;
+      flex-direction:column ;
+    }
+    
   }
+  
+  @media (min-width: 769px) and (max-width: 1024px){
+    .spanrow {
+      width: 50vw;
+      border-bottom: 1px solid black; /* Ensure border-bottom is applied only to .spanrow */
+      column-span: 1;
+    }
+    .leranbtn{
+      margin-left: 25rem;
+      width: 20vw;
+     }
+     .lasttr{
+      margin-left: 10rem;
+      width: 70vw;
+    }
+    
+    .page4img{
+     margin-left: 1rem;
+    }
+    
+  }
+
+  @media (max-width: 480px){
+    .table-container{
+      font-size: small;
+    }
+    .crossicon{
+      margin-left: 2rem;
+      color: #fd0808;
+      height:3vh;
+      width: 2rem;
+    }
+    .checkmark1{
+      margin-left: 2rem;
+      color:green;
+      height: 4vh;
+      width: 3rem;
+    }
+    .page3ban{
+      margin-left: -5rem;
+    }
+    .banheading {
+      margin-left: -15rem;
+      margin-top: 15rem;
+      
+    }
+    .leranbtn{
+      margin-left: 5.5rem;
+     }
+  
+   .page4warp{
+    display: flex;
+  flex-direction: column;
+   }
+  
+  }
+
+
+
+
+ 
+
+
   
